@@ -1,0 +1,15 @@
+---
+layout: post
+title: 'iTerm: how to open new tabs programmatically'
+date: '2015-06-11T10:08:00.001+03:00'
+author: Daemonic
+tags:
+- iTerm
+- bash
+- MacOS
+modified_time: '2015-06-11T10:11:37.356+03:00'
+blogger_id: tag:blogger.com,1999:blog-2174521382944768960.post-2349952759759495500
+blogger_orig_url: http://my-irregularity.blogspot.com/2015/06/iterm-how-to-open-new-tabs.html
+---
+
+<span style="font-family: Helvetica Neue, Arial, Helvetica, sans-serif;">This script will open new tab in iTerm and execute command there.</span><br /><span style="font-family: Helvetica Neue, Arial, Helvetica, sans-serif;">Useful when you need to do something in several tabs (</span><span style="font-family: 'Helvetica Neue', Arial, Helvetica, sans-serif;">deploy applications, pull repos, etc.</span><span style="font-family: 'Helvetica Neue', Arial, Helvetica, sans-serif;">).</span><br /><span style="font-family: Helvetica Neue, Arial, Helvetica, sans-serif;"><br /></span><span style="font-family: Courier New, Courier, monospace;">tab() {</span><br /><span style="font-family: Courier New, Courier, monospace;">&nbsp; osascript \</span><br /><span style="font-family: Courier New, Courier, monospace;">&nbsp; &nbsp; -e 'activate application "iTerm"' \</span><br /><span style="font-family: Courier New, Courier, monospace;">&nbsp; &nbsp; -e 'tell application "System Events" to keystroke "t" using command down' \</span><br /><span style="font-family: Courier New, Courier, monospace;">&nbsp; &nbsp; -e "tell application \"iTerm\" to tell session -1 of current terminal to write text \"$1\""</span><br /><span style="font-family: Courier New, Courier, monospace;">}</span><br /><span style="font-family: Helvetica Neue, Arial, Helvetica, sans-serif;"><br /></span><span style="font-family: Helvetica Neue, Arial, Helvetica, sans-serif;">Can be modified to use regular Mac Terminal instead of iTerm - just change app name in 3rd string.</span><br /><span style="font-family: Helvetica Neue, Arial, Helvetica, sans-serif;"><br /></span><span style="font-family: Helvetica Neue, Arial, Helvetica, sans-serif;">Examples:</span><br /><span style="font-family: Helvetica Neue, Arial, Helvetica, sans-serif;"><br /></span><span style="font-family: 'Courier New', Courier, monospace;">tab 'cd ~/Projects; git pull'</span><br /><span style="font-family: Courier New, Courier, monospace;">tab 'ls'</span><br /><br />

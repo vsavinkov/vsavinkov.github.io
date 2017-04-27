@@ -1,0 +1,14 @@
+---
+layout: post
+title: 'Bash: how to remove unused Maven artifacts'
+date: '2015-03-19T11:47:00.000+03:00'
+author: Daemonic
+tags:
+- bash
+- maven
+modified_time: '2015-03-19T11:47:04.930+03:00'
+blogger_id: tag:blogger.com,1999:blog-2174521382944768960.post-8461697536042698414
+blogger_orig_url: http://my-irregularity.blogspot.com/2015/03/bash-how-to-remove-unused-maven.html
+---
+
+<span style="font-family: Helvetica Neue, Arial, Helvetica, sans-serif;">The following script will remove all but latest artifacts downloaded by Maven from your local repo (~/.m2). This will save disk space since maven don't remove old artifacts automatically. Just add paths to desired artifacts instead of underlined paths.</span><br /><br /><span style="font-family: Courier New, Courier, monospace;">clear_artifacts(){</span><br /><span style="font-family: Courier New, Courier, monospace;">&nbsp; delete_all_but_latest(){</span><br /><span style="font-family: Courier New, Courier, monospace;">&nbsp; &nbsp; pushd ~/.m2/repository/$1</span><br /><span style="font-family: Courier New, Courier, monospace;">&nbsp; &nbsp; ls -t | tail +2 | tail -r | xargs rm -r</span><br /><span style="font-family: Courier New, Courier, monospace;">&nbsp; &nbsp; popd</span><br /><span style="font-family: Courier New, Courier, monospace;">&nbsp; }</span><br /><span style="font-family: Courier New, Courier, monospace;">&nbsp; delete_all_but_latest com/name/path/to/artifact1</span><br /><span style="font-family: Courier New, Courier, monospace;">&nbsp; delete_all_but_latest com/name/path/to/artifact3</span><br /><span style="font-family: Courier New, Courier, monospace;">&nbsp; delete_all_but_latest com/name/path/to/artifact2</span><br /><span style="font-family: Courier New, Courier, monospace;">}</span>

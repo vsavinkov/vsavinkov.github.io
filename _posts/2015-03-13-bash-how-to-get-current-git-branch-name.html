@@ -1,0 +1,14 @@
+---
+layout: post
+title: 'Bash: how to get current git branch name in command prompt'
+date: '2015-03-13T17:39:00.001+03:00'
+author: Daemonic
+tags:
+- bash
+- Git
+modified_time: '2015-03-14T02:24:54.805+03:00'
+blogger_id: tag:blogger.com,1999:blog-2174521382944768960.post-3907505563887609373
+blogger_orig_url: http://my-irregularity.blogspot.com/2015/03/bash-how-to-get-current-git-branch-name.html
+---
+
+<span style="font-family: Helvetica Neue, Arial, Helvetica, sans-serif;">If you use git and its 'branches' feature in your project then this method would be useful for you.</span><br /><span style="font-family: Helvetica Neue, Arial, Helvetica, sans-serif;">Add the following to your .bash_profile (or .bashrc on Ubuntu):</span><br /><br /><span style="font-family: Courier New, Courier, monospace;">get_git_branch () {</span><br /><span style="font-family: Courier New, Courier, monospace;">&nbsp; git branch 2&gt; /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/ (\1)/'</span><br /><span style="font-family: Courier New, Courier, monospace;">}</span><br /><span style="font-family: Courier New, Courier, monospace;">PS1='\[\e[1;34m\]\W\[\e[0m\]$(get_git_branch) '</span><br /><span style="font-family: Courier New, Courier, monospace;"><br /></span><span style="font-family: 'Helvetica Neue', Arial, Helvetica, sans-serif;">You can replace 4th string by your own prompt, just add&nbsp;</span><span style="font-family: 'Courier New', Courier, monospace;">$(get_git_branch)</span><span style="font-family: 'Helvetica Neue', Arial, Helvetica, sans-serif;">&nbsp;there.</span><br /><span style="font-family: 'Helvetica Neue', Arial, Helvetica, sans-serif;">Now your command prompt will contain current git branch name. If you are not in git repository then regular command prompt will appear.</span>

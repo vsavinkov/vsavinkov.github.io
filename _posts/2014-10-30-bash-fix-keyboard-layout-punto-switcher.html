@@ -1,0 +1,14 @@
+---
+layout: post
+title: 'Bash: Fix keyboard layout (Punto Switcher-like)'
+date: '2014-10-30T14:48:00.001+03:00'
+author: Daemonic
+tags:
+- bash
+- MacOS
+modified_time: '2014-11-27T12:43:34.789+03:00'
+blogger_id: tag:blogger.com,1999:blog-2174521382944768960.post-1892111230459278353
+blogger_orig_url: http://my-irregularity.blogspot.com/2014/10/bash-fix-keyboard-layout-punto-switcher.html
+---
+
+<div dir="ltr" style="text-align: left;" trbidi="on"><span style="font-family: Trebuchet MS, sans-serif;">The following script will transcript clipboard content from English keyboard layout to Russian and vice versa. For example, 'Ghbdtn!' will be trabsformed into 'Привет!'. Note that transformation is MacBook Pro 2012 (and MacOS) specific. It should be amended for other devices/keyboards.</span><br /><span style="font-family: Trebuchet MS, sans-serif;"><br /></span><span style="font-family: Trebuchet MS, sans-serif;">See script:</span><br /><br /><span style="font-family: Courier New, Courier, monospace;">fixlayout(){</span><br /><span style="font-family: Courier New, Courier, monospace;">&nbsp; en="qwertyuiop\[]asdfghjkl;'\zxcvbnm,.QWERTYUIOP{}ASDFGHJKL:\"|ZXCVBNM&lt;&gt;\@№%%^&amp;*"</span><br /><span style="font-family: Courier New, Courier, monospace;">&nbsp; ru="йцукенгшщз\хъфывапролджэёячсмитьбюЙЦУКЕНГШЩЗХЪФЫВАПРОЛДЖ\ЭЁЯЧСМИТЬБЮ\"#$:,.;"</span><br /><span style="font-family: Courier New, Courier, monospace;">&nbsp; pbpaste | sed y=$en$ru=$ru$en= | pbcopy</span><br /><span style="font-family: Courier New, Courier, monospace;">}</span><br /><span style="font-family: 'Trebuchet MS', sans-serif;"><br /></span><span style="font-family: Trebuchet MS, sans-serif;">So, we just taking difference in English and Russian keyboard layouts into variable and transforming it.</span></div>
