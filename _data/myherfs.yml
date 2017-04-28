@@ -1,0 +1,32 @@
+- name: twitter
+  url: 
+
+- name: facebook
+  url: 
+
+- name: weibo
+  url: 
+
+- name: instagram
+  url: 
+
+- name: tumblr
+  url: 
+
+- name: github
+  url: 
+
+- name: linkedin
+  url: 
+
+- name: zhihu
+  url: 
+
+- name: bilibili
+  url: 
+
+- name: telegram
+  url: 
+
+- name: gplus
+  url:

@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#4CAF50">
+
+  <title>Bash: how to control programmable surge protector from console</title>
+
+  <link rel="icon" href="/assets/images/icon/favicon.ico" sizes="32x32">
+  <link rel="icon" href="/assets/images/icon/favicon.ico" sizes="16x16">
+
+  <meta name="description" content="If you have programmable LAN-controlled surge protector EG-PMS2-LAN then you, like me, may be disappointed by fact that it only can be controlled via (ugly) ...">
+  <link rel="canonical" href="http://localhost:4000/coding/2015/12/03/bash-energenie-control.html">
+  <link rel="alternate" type="application/rss+xml" title="VS's blog" href="http://localhost:4000/feed.xml">
+
+  <link href="https://fonts.css.network/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/css/materialize.min.css">
+  <link rel="stylesheet" href="/assets/css/gallery-materialize.min.opt.css">
+  <link rel="stylesheet" href="/assets/css/prism.css">
+  <link rel="stylesheet" href="/assets/css/main.css">
+  
+  <link rel="stylesheet" href="/assets/css/posts.css">
+
+</head>
+
+  <body>
+
+    <!-- 菜单和header -->
+<nav class="nav-extended green">
+  <div class="nav-background">
+    <div class="ea k" style="background-image: url('/assets/images/bg.png');"></div>
+  </div>
+  <div class="nav-wrapper db">
+    <!--移动端菜单按钮-->
+    <a href="#" data-activates="slide-out" class="button-collapse"><i class="material-icons">menu</i></a>
+    <!--页面的导航-->
+    <ul class="bt hide-on-med-and-down">
+       
+      <li>
+        <a href="/">Home</a>
+      </li>
+         
+      <li>
+        <a href="/about.html">About me</a>
+      </li>
+          
+      <li>
+        <a href="/archive.html">Timeline</a>
+      </li>
+                
+      <li>
+        <a href="/links.html">Links</a>
+      </li>
+          
+      <li>
+        <a href="/tags.html">Tags</a>
+      </li>
+        
+      <li class="nav-search">
+          <div class="nav-search-wrapper">
+            <div>
+            <input class="cb-search-content" id="cb-search-content" placeholder="Search" ><i class="search material-icons">search</i>
+            </div>
+          </div>
+        </li>
+    </ul>
+    <style>
+    </style>
+    <!--页面的标题-->
+    <div class="nav-header de">
+       
+      <h1>BASH: HOW TO CONTROL PROGRAMMABLE SURGE PROTECTOR FROM CONSOLE</h1>
+      
+      <div class="ge">Dec 3, 2015</div>
+      
+      
+    </div>
+  </div>
+  <!-- 页面内的导航 -->
+  
+  
+</nav>
+<!--移动端nav-->
+<ul id="slide-out" class="side-nav">
+  <li>
+    <div class="userView ">
+      
+      <div class="background green">
+        <div class="mobile-background-image" style="background-image: url('/assets/images/bg.png');"></div>
+      </div>
+      
+      <a href="/"><img class="circle" src="/assets/images/M.png"></a>
+      <a href="#!"><span class="white-text name">VS's blog</span></a>
+      <a href="mailto:alligators@list.ru"><span class="white-text email">alligators@list.ru</span></a>
+    </div>
+  </li>
+  <form action="http://localhost:4000/coding/2015/12/03/bash-energenie-control.html" method="get">
+    <div class="input-field">
+      <!--<input type="text" id="search-query" name="q" placeholder="Search" autocomplete="off">-->
+      <input class="cb-search-content" type="search" required name="q" placeholder="Search" autocomplete="off">
+      <label class="label-icon" for="search"><i class="material-icons">search</i></label>
+      <i class="material-icons">close</i>
+    </div>
+  </form>
+  <section id="search-results" style="display: none;"> </section>
+  <li>
+    <div class="divider"></div>
+  </li>
+  <li><a class="subheader">Pages</a></li>
+  <li><a class="waves-effect tooltipped" data-position="right" data-delay="50" data-tooltip="Home" href="/">Home</a></li>
+   
+  <li><a class="waves-effect tooltipped" data-position="right" data-delay="50" data-tooltip="About me" href="/about.html">About me</a></li>
+    
+  <li><a class="waves-effect tooltipped" data-position="right" data-delay="50" data-tooltip="Timeline" href="/archive.html">Timeline</a></li>
+          
+  <li><a class="waves-effect tooltipped" data-position="right" data-delay="50" data-tooltip="Links" href="/links.html">Links</a></li>
+    
+  <li><a class="waves-effect tooltipped" data-position="right" data-delay="50" data-tooltip="Tags" href="/tags.html">Tags</a></li>
+   
+  <li>
+    <div class="divider"></div>
+  </li>
+</ul>
+
+
+<script id="search-results-template" type="text/mustache">
+  {{#entries}}
+    <li>
+      <a class="tooltipped" data-position="right" data-delay="50" data-tooltip="{{#date}}{{pubdate}}{{/date}}" href="{{url}}">{{title}}</a>
+    </li>
+  {{/entries}}
+</script>
+<script id="search-results-nav" type="text/mustache">
+    <div class="center">
+  {{#entries}}
+   <ul>
+   <li class="post-list"><a class="waves-effect post-list black-text" data-tooltip="{{#date}}{{pubdate}}{{/date}}" href="{{url}}">{{title}}</a></li>
+   </ul>
+    
+  {{/entries}}
+  </div>
+</script>
+
+
+
+    
+
+    <main>
+
+    <div id="main" class="db">
+        <div class="content">
+     <br>
+    <div class="row">
+      <div class="col s12">
+        <div id="postsContent" class="card-panel white">
+          <span>
+            <p>If you have programmable LAN-controlled surge protector EG-PMS2-LAN then you, like me, may be disappointed by fact that it only can be controlled via (ugly) web interface.</p>
+
+<p>Here is a bash function which allow you to do that via console:</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>powerlan() {
+  curl -f -d “pw=1”       http://192.168.0.2/login.html&gt;/dev/null 2&gt;/dev/null
+  curl -f -d “ctl”$1”=”$2 http://192.168.0.2/&gt;/dev/null 2&gt;/dev/null
+}
+</code></pre>
+</div>
+
+<p>Here:
+192.168.0.2 - IP address of LAN surge protector;
+1 (in “pw=1”) - password for it (1 is default password)</p>
+
+<p>Usage:</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>powerlan 1 1 #turns on socket 1
+powerlan 1 0 #turns off socket 1
+powerlan 2 1 #turns on socket 2
+</code></pre>
+</div>
+
+<p>…and so on.</p>
+
+          </span>
+            
+        </div>
+      </div>
+    </div>
+<div class="row">
+
+<a data-position="left" data-delay="50" data-tooltip="Bash: how to check process availability" href="/coding/2015/06/19/bash-checking-process-availability.html" class="btn-floating waves-effect waves-grey btn-flat white tooltipped"><i class="material-icons black-text">arrow_back</i></a>
+
+
+<a data-position="right" data-delay="50" data-tooltip="По Европе на мото" href="/%D0%BF%D1%83%D1%82%D0%B5%D1%88%D0%B5%D1%81%D1%82%D0%B2%D0%B8%D1%8F/2016/07/11/Europe-2016.html" class="btn-floating waves-effect waves-grey btn-flat white right tooltipped"><i class="material-icons black-text">arrow_forward</i></a>
+
+</div>
+        </div>
+    </div>
+    <div class="fixed-action-btn to-top">
+        <a href="#top" id="toTop" class="btn-floating btn-large waves-effect waves-light" style="display: none;"><i
+                class="material-icons">expand_less</i></a>
+    </div>
+    <div class="fixed-action-btn body-to-top">
+        <a href="#top" id="bodyToTop" class="btn-floating btn-large waves-effect waves-light" style="display: none;"><i
+                class="material-icons">expand_less</i></a>
+    </div>
+</main>
+
+    
+
+    <footer class="page-footer green">
+        <div class="row">
+            <div class="col s12 m4 l4">
+                <p class="center p-linkIcon">
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                </p>
+            </div>
+            <div class="col s12 m4 l4">
+                <p class="p-date grey-text text-lighten-4 center">This blog is built with <a href="http://jekyllrb.com/" style="color: rgb(0,255,0)">Jekyll</a> and hosted on <a href="https://pages.github.com/" style="color: rgb(0,255,0)">GitHub Pages</a></p>
+            </div>
+        </div>
+</footer>
+<style>
+</style>
+
+    <script type="text/javascript" src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+
+<script type="text/javascript" src="/assets/js/materialize.min.js"></script>
+<script type="text/javascript" src="/assets/js/jquery.scrollToTop.min.js"></script>
+<script type="text/javascript" src="/assets/js/gallery.min.opt.js"></script>
+<script type="text/javascript" src="/assets/js/jquery.lazyload.min.js"></script>
+<script type="text/javascript" src="/assets/js/toc.js"></script>
+<script type="text/javascript" src="/assets/js/main.js"></script>
+<script type="text/javascript" src="/assets/js/bootstrap3-typeahead.min.js"></script>
+
+
+
+
+<script>
+   $(document).ready(function () {
+        var time1 = 0;
+        var show = false;
+        var names = new Array(); //文章名字等
+        var urls = new Array(); //文章地址
+        $.getJSON("/assets/cb-search.json").done(function (data) {
+            if (data.code == 0) {
+                for (var index in data.data) {
+                    var item = data.data[index];
+                    names.push(item.title);
+                    urls.push(item.url);
+                }
+
+                $(".cb-search-content").typeahead({
+                    source: names,
+
+                    afterSelect: function (item) {
+						$(".cb-search-tool").css("display", "none");
+                        show = false;
+                        window.location.href = (urls[names.indexOf(item)]);
+                        return item;
+                    }
+                });
+            }
+        }).error(function(data, b) { console.log("json解析错误，搜索功能暂不可用，请检查文章title，确保不含有换行等特殊符号"); });
+            
+                var posts = $("div.gallery-item");
+                if (posts.attr("data-url")){
+                posts.unbind();
+                posts.click(function(){
+                    var postUrl = $(this).attr("data-url")
+                    window.location.href=postUrl;
+                })
+                }
+
+            
+    });
+
+</script>
+
+    
+
+  </body>
+
+</html>

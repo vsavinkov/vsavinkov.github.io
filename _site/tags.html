@@ -1,0 +1,642 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#4CAF50">
+
+  <title>Tags</title>
+
+  <link rel="icon" href="/assets/images/icon/favicon.ico" sizes="32x32">
+  <link rel="icon" href="/assets/images/icon/favicon.ico" sizes="16x16">
+
+  <meta name="description" content="Viacheslav Savinkov's personal blog
+">
+  <link rel="canonical" href="http://localhost:4000/tags.html">
+  <link rel="alternate" type="application/rss+xml" title="VS's blog" href="http://localhost:4000/feed.xml">
+
+  <link href="https://fonts.css.network/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/css/materialize.min.css">
+  <link rel="stylesheet" href="/assets/css/gallery-materialize.min.opt.css">
+  <link rel="stylesheet" href="/assets/css/prism.css">
+  <link rel="stylesheet" href="/assets/css/main.css">
+  
+  <link rel="stylesheet" href="/assets/css/posts.css">
+
+</head>
+
+  <body>
+
+    <!-- 菜单和header -->
+<nav class="nav-extended blue">
+  <div class="nav-background">
+    <div class="ea k" style="background-image: url('/assets/images/bg.png');"></div>
+  </div>
+  <div class="nav-wrapper db">
+    <!--移动端菜单按钮-->
+    <a href="#" data-activates="slide-out" class="button-collapse"><i class="material-icons">menu</i></a>
+    <!--页面的导航-->
+    <ul class="bt hide-on-med-and-down">
+       
+      <li>
+        <a href="/">Home</a>
+      </li>
+         
+      <li>
+        <a href="/about.html">About me</a>
+      </li>
+          
+      <li>
+        <a href="/archive.html">Timeline</a>
+      </li>
+                
+      <li>
+        <a href="/links.html">Links</a>
+      </li>
+          
+      <li class="k">
+        <a href="/tags.html">Tags</a>
+      </li>
+        
+      <li class="nav-search">
+          <div class="nav-search-wrapper">
+            <div>
+            <input class="cb-search-content" id="cb-search-content" placeholder="Search" ><i class="search material-icons">search</i>
+            </div>
+          </div>
+        </li>
+    </ul>
+    <style>
+    </style>
+    <!--页面的标题-->
+    <div class="nav-header de">
+       
+      <h1>TAGS</h1>
+      
+      <div class="ge">tags</div>
+      
+      
+    </div>
+  </div>
+  <!-- 页面内的导航 -->
+  
+  
+</nav>
+<!--移动端nav-->
+<ul id="slide-out" class="side-nav">
+  <li>
+    <div class="userView ">
+      
+      <div class="background blue">
+        <div class="mobile-background-image" style="background-image: url('/assets/images/bg.png');"></div>
+      </div>
+      
+      <a href="/"><img class="circle" src="/assets/images/M.png"></a>
+      <a href="#!"><span class="white-text name">VS's blog</span></a>
+      <a href="mailto:alligators@list.ru"><span class="white-text email">alligators@list.ru</span></a>
+    </div>
+  </li>
+  <form action="http://localhost:4000/tags.html" method="get">
+    <div class="input-field">
+      <!--<input type="text" id="search-query" name="q" placeholder="Search" autocomplete="off">-->
+      <input class="cb-search-content" type="search" required name="q" placeholder="Search" autocomplete="off">
+      <label class="label-icon" for="search"><i class="material-icons">search</i></label>
+      <i class="material-icons">close</i>
+    </div>
+  </form>
+  <section id="search-results" style="display: none;"> </section>
+  <li>
+    <div class="divider"></div>
+  </li>
+  <li><a class="subheader">Pages</a></li>
+  <li><a class="waves-effect tooltipped" data-position="right" data-delay="50" data-tooltip="Home" href="/">Home</a></li>
+   
+  <li><a class="waves-effect tooltipped" data-position="right" data-delay="50" data-tooltip="About me" href="/about.html">About me</a></li>
+    
+  <li><a class="waves-effect tooltipped" data-position="right" data-delay="50" data-tooltip="Timeline" href="/archive.html">Timeline</a></li>
+          
+  <li><a class="waves-effect tooltipped" data-position="right" data-delay="50" data-tooltip="Links" href="/links.html">Links</a></li>
+    
+  <li><a class="waves-effect tooltipped" data-position="right" data-delay="50" data-tooltip="Tags" href="/tags.html">Tags</a></li>
+   
+  <li>
+    <div class="divider"></div>
+  </li>
+</ul>
+
+
+<script id="search-results-template" type="text/mustache">
+  {{#entries}}
+    <li>
+      <a class="tooltipped" data-position="right" data-delay="50" data-tooltip="{{#date}}{{pubdate}}{{/date}}" href="{{url}}">{{title}}</a>
+    </li>
+  {{/entries}}
+</script>
+<script id="search-results-nav" type="text/mustache">
+    <div class="center">
+  {{#entries}}
+   <ul>
+   <li class="post-list"><a class="waves-effect post-list black-text" data-tooltip="{{#date}}{{pubdate}}{{/date}}" href="{{url}}">{{title}}</a></li>
+   </ul>
+    
+  {{/entries}}
+  </div>
+</script>
+
+
+
+    
+
+    <main>
+
+    <div id="main" class="db">
+        <div class="content">
+     <br> 
+
+<div class="b e gallery-collection">
+    <div class="d ii offset-m2 gu gallery-item gallery-expand ce" style="position: absolute; left: 0px; top: 124px;">
+        <div class="placeholder">
+            <div class="gallery-curve-wrapper">
+                <div class="gallery-header">
+                    <span><font><font >jekyll</font></font></span>
+                    <span class="badge blue white-text">2 records</span>
+                </div>
+                <div class="gallery-body">
+                    <div class="title-wrapper center">
+                        <h3>jekyll</h3>
+                    </div>
+                    <div class="collection">
+                        
+                        <a href="/jekyll/2006/03/18/welcome-to-jekyll2.html" class="collection-item"><span class="badge blue white-text">2006-03-18</span>Welcome to Jekyll!</a>
+                        <a href="/noimage/2005/01/18/welcome-to-jekyll.html" class="collection-item"><span class="badge blue white-text">2005-01-18</span>Welcome to Jekyll!</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="b e gallery-collection">
+    <div class="d ii offset-m2 gu gallery-item gallery-expand ce" style="position: absolute; left: 0px; top: 124px;">
+        <div class="placeholder">
+            <div class="gallery-curve-wrapper">
+                <div class="gallery-header">
+                    <span><font><font >ubuntu</font></font></span>
+                    <span class="badge blue white-text">1 records</span>
+                </div>
+                <div class="gallery-body">
+                    <div class="title-wrapper center">
+                        <h3>ubuntu</h3>
+                    </div>
+                    <div class="collection">
+                        
+                        <a href="/noimage/2005/01/18/welcome-to-jekyll.html" class="collection-item"><span class="badge blue white-text">2005-01-18</span>Welcome to Jekyll!</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="b e gallery-collection">
+    <div class="d ii offset-m2 gu gallery-item gallery-expand ce" style="position: absolute; left: 0px; top: 124px;">
+        <div class="placeholder">
+            <div class="gallery-curve-wrapper">
+                <div class="gallery-header">
+                    <span><font><font >ruby</font></font></span>
+                    <span class="badge blue white-text">1 records</span>
+                </div>
+                <div class="gallery-body">
+                    <div class="title-wrapper center">
+                        <h3>ruby</h3>
+                    </div>
+                    <div class="collection">
+                        
+                        <a href="/jekyll/2006/02/18/welcome-to-jekyll1.html" class="collection-item"><span class="badge blue white-text">2006-02-18</span>Welcome to Jekyll!</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="b e gallery-collection">
+    <div class="d ii offset-m2 gu gallery-item gallery-expand ce" style="position: absolute; left: 0px; top: 124px;">
+        <div class="placeholder">
+            <div class="gallery-curve-wrapper">
+                <div class="gallery-header">
+                    <span><font><font >html</font></font></span>
+                    <span class="badge blue white-text">1 records</span>
+                </div>
+                <div class="gallery-body">
+                    <div class="title-wrapper center">
+                        <h3>html</h3>
+                    </div>
+                    <div class="collection">
+                        
+                        <a href="/jekyll/2006/03/18/welcome-to-jekyll2.html" class="collection-item"><span class="badge blue white-text">2006-03-18</span>Welcome to Jekyll!</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="b e gallery-collection">
+    <div class="d ii offset-m2 gu gallery-item gallery-expand ce" style="position: absolute; left: 0px; top: 124px;">
+        <div class="placeholder">
+            <div class="gallery-curve-wrapper">
+                <div class="gallery-header">
+                    <span><font><font >test</font></font></span>
+                    <span class="badge blue white-text">2 records</span>
+                </div>
+                <div class="gallery-body">
+                    <div class="title-wrapper center">
+                        <h3>test</h3>
+                    </div>
+                    <div class="collection">
+                        
+                        <a href="/noimage/2007/03/04/toc.html" class="collection-item"><span class="badge blue white-text">2007-03-04</span>toc test</a>
+                        <a href="/noimage/2007/03/02/test.html" class="collection-item"><span class="badge blue white-text">2007-03-02</span>markdown test</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="b e gallery-collection">
+    <div class="d ii offset-m2 gu gallery-item gallery-expand ce" style="position: absolute; left: 0px; top: 124px;">
+        <div class="placeholder">
+            <div class="gallery-curve-wrapper">
+                <div class="gallery-header">
+                    <span><font><font >Review</font></font></span>
+                    <span class="badge blue white-text">1 records</span>
+                </div>
+                <div class="gallery-body">
+                    <div class="title-wrapper center">
+                        <h3>Review</h3>
+                    </div>
+                    <div class="collection">
+                        
+                        <a href="/2011/08/13/android-htc-desire.html" class="collection-item"><span class="badge blue white-text">2011-08-13</span>Обзор внешней батареи для мобильных устройств</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="b e gallery-collection">
+    <div class="d ii offset-m2 gu gallery-item gallery-expand ce" style="position: absolute; left: 0px; top: 124px;">
+        <div class="placeholder">
+            <div class="gallery-curve-wrapper">
+                <div class="gallery-header">
+                    <span><font><font >Turkey 2014</font></font></span>
+                    <span class="badge blue white-text">9 records</span>
+                </div>
+                <div class="gallery-body">
+                    <div class="title-wrapper center">
+                        <h3>Turkey 2014</h3>
+                    </div>
+                    <div class="collection">
+                        
+                        <a href="/%D0%BF%D1%83%D1%82%D0%B5%D1%88%D0%B5%D1%81%D1%82%D0%B2%D0%B8%D1%8F/2014/05/16/Turkey-9.html" class="collection-item"><span class="badge blue white-text">2014-05-16</span>Глава IX. Стамбул</a>
+                        <a href="/%D0%BF%D1%83%D1%82%D0%B5%D1%88%D0%B5%D1%81%D1%82%D0%B2%D0%B8%D1%8F/2014/05/14/Turkey-8.html" class="collection-item"><span class="badge blue white-text">2014-05-14</span>Глава VIII. Транспорт</a>
+                        <a href="/%D0%BF%D1%83%D1%82%D0%B5%D1%88%D0%B5%D1%81%D1%82%D0%B2%D0%B8%D1%8F/2014/05/14/Turkey-7.html" class="collection-item"><span class="badge blue white-text">2014-05-14</span>Глава VII. Анкара</a>
+                        <a href="/%D0%BF%D1%83%D1%82%D0%B5%D1%88%D0%B5%D1%81%D1%82%D0%B2%D0%B8%D1%8F/2014/05/12/Turkey-6.html" class="collection-item"><span class="badge blue white-text">2014-05-12</span>Глава VI. Гёреме</a>
+                        <a href="/%D0%BF%D1%83%D1%82%D0%B5%D1%88%D0%B5%D1%81%D1%82%D0%B2%D0%B8%D1%8F/2014/05/10/Turkey-5.html" class="collection-item"><span class="badge blue white-text">2014-05-10</span>Глава V. Догубаязит. Ван</a>
+                        <a href="/%D0%BF%D1%83%D1%82%D0%B5%D1%88%D0%B5%D1%81%D1%82%D0%B2%D0%B8%D1%8F/2014/05/08/Turkey-4.html" class="collection-item"><span class="badge blue white-text">2014-05-08</span>Глава IV. Эрзурум</a>
+                        <a href="/%D0%BF%D1%83%D1%82%D0%B5%D1%88%D0%B5%D1%81%D1%82%D0%B2%D0%B8%D1%8F/2014/05/06/Turkey-3.html" class="collection-item"><span class="badge blue white-text">2014-05-06</span>Глава III. Трабзон</a>
+                        <a href="/%D0%BF%D1%83%D1%82%D0%B5%D1%88%D0%B5%D1%81%D1%82%D0%B2%D0%B8%D1%8F/2014/05/04/Turkey-2.html" class="collection-item"><span class="badge blue white-text">2014-05-04</span>Глава II. Сочи</a>
+                        <a href="/%D0%BF%D1%83%D1%82%D0%B5%D1%88%D0%B5%D1%81%D1%82%D0%B2%D0%B8%D1%8F/2014/05/03/Turkey-1.html" class="collection-item"><span class="badge blue white-text">2014-05-03</span>Глава I. Самоподготовка</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="b e gallery-collection">
+    <div class="d ii offset-m2 gu gallery-item gallery-expand ce" style="position: absolute; left: 0px; top: 124px;">
+        <div class="placeholder">
+            <div class="gallery-curve-wrapper">
+                <div class="gallery-header">
+                    <span><font><font >bash</font></font></span>
+                    <span class="badge blue white-text">11 records</span>
+                </div>
+                <div class="gallery-body">
+                    <div class="title-wrapper center">
+                        <h3>bash</h3>
+                    </div>
+                    <div class="collection">
+                        
+                        <a href="/coding/2015/12/03/bash-energenie-control.html" class="collection-item"><span class="badge blue white-text">2015-12-03</span>Bash: how to control programmable surge protector from console</a>
+                        <a href="/coding/2015/06/19/bash-checking-process-availability.html" class="collection-item"><span class="badge blue white-text">2015-06-19</span>Bash: how to check process availability</a>
+                        <a href="/coding/2015/06/11/iterm-how-to-open-new-tabs.html" class="collection-item"><span class="badge blue white-text">2015-06-11</span>iTerm: how to open new tabs programmatically</a>
+                        <a href="/coding/2015/03/19/bash-how-to-unused-maven-artifacts.html" class="collection-item"><span class="badge blue white-text">2015-03-19</span>Bash: how to remove unused Maven artifacts</a>
+                        <a href="/coding/2015/03/13/bash-current-git-branch-name-in-command-prompt.html" class="collection-item"><span class="badge blue white-text">2015-03-13</span>Bash: how to get current git branch name in command prompt</a>
+                        <a href="/coding/2015/03/10/bash-local-http-server.html" class="collection-item"><span class="badge blue white-text">2015-03-10</span>Bash: how to create local HTTP server to share files</a>
+                        <a href="/coding/2014/11/11/iterm-set-tab-name-and-color.html" class="collection-item"><span class="badge blue white-text">2014-11-11</span>iTerm: How to set tab name and color from command line</a>
+                        <a href="/coding/2014/10/30/bash-fix-keyboard-layout.html" class="collection-item"><span class="badge blue white-text">2014-10-30</span>Bash: Fix keyboard layout (Punto Switcher-like)</a>
+                        <a href="/coding/2014/10/30/bash-convenient-way-to-compare-files.html" class="collection-item"><span class="badge blue white-text">2014-10-30</span>Bash: Convenient way to compare files</a>
+                        <a href="/coding/2014/10/30/bash-jenkins-jobs-statuses.html" class="collection-item"><span class="badge blue white-text">2014-10-30</span>Bash: Checking Jenkins jobs statuses from command line</a>
+                        <a href="/coding/2014/10/30/ssh-remote-host-identification-error.html" class="collection-item"><span class="badge blue white-text">2014-10-30</span>Bash: SSH - avoiding 'remote host identification has changed' error</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="b e gallery-collection">
+    <div class="d ii offset-m2 gu gallery-item gallery-expand ce" style="position: absolute; left: 0px; top: 124px;">
+        <div class="placeholder">
+            <div class="gallery-curve-wrapper">
+                <div class="gallery-header">
+                    <span><font><font >Jenkins</font></font></span>
+                    <span class="badge blue white-text">1 records</span>
+                </div>
+                <div class="gallery-body">
+                    <div class="title-wrapper center">
+                        <h3>Jenkins</h3>
+                    </div>
+                    <div class="collection">
+                        
+                        <a href="/coding/2014/10/30/bash-jenkins-jobs-statuses.html" class="collection-item"><span class="badge blue white-text">2014-10-30</span>Bash: Checking Jenkins jobs statuses from command line</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="b e gallery-collection">
+    <div class="d ii offset-m2 gu gallery-item gallery-expand ce" style="position: absolute; left: 0px; top: 124px;">
+        <div class="placeholder">
+            <div class="gallery-curve-wrapper">
+                <div class="gallery-header">
+                    <span><font><font >MacOS</font></font></span>
+                    <span class="badge blue white-text">3 records</span>
+                </div>
+                <div class="gallery-body">
+                    <div class="title-wrapper center">
+                        <h3>MacOS</h3>
+                    </div>
+                    <div class="collection">
+                        
+                        <a href="/coding/2015/06/11/iterm-how-to-open-new-tabs.html" class="collection-item"><span class="badge blue white-text">2015-06-11</span>iTerm: how to open new tabs programmatically</a>
+                        <a href="/coding/2015/03/10/bash-local-http-server.html" class="collection-item"><span class="badge blue white-text">2015-03-10</span>Bash: how to create local HTTP server to share files</a>
+                        <a href="/coding/2014/10/30/bash-fix-keyboard-layout.html" class="collection-item"><span class="badge blue white-text">2014-10-30</span>Bash: Fix keyboard layout (Punto Switcher-like)</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="b e gallery-collection">
+    <div class="d ii offset-m2 gu gallery-item gallery-expand ce" style="position: absolute; left: 0px; top: 124px;">
+        <div class="placeholder">
+            <div class="gallery-curve-wrapper">
+                <div class="gallery-header">
+                    <span><font><font >iTerm</font></font></span>
+                    <span class="badge blue white-text">2 records</span>
+                </div>
+                <div class="gallery-body">
+                    <div class="title-wrapper center">
+                        <h3>iTerm</h3>
+                    </div>
+                    <div class="collection">
+                        
+                        <a href="/coding/2015/06/11/iterm-how-to-open-new-tabs.html" class="collection-item"><span class="badge blue white-text">2015-06-11</span>iTerm: how to open new tabs programmatically</a>
+                        <a href="/coding/2014/11/11/iterm-set-tab-name-and-color.html" class="collection-item"><span class="badge blue white-text">2014-11-11</span>iTerm: How to set tab name and color from command line</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="b e gallery-collection">
+    <div class="d ii offset-m2 gu gallery-item gallery-expand ce" style="position: absolute; left: 0px; top: 124px;">
+        <div class="placeholder">
+            <div class="gallery-curve-wrapper">
+                <div class="gallery-header">
+                    <span><font><font >Путешествия</font></font></span>
+                    <span class="badge blue white-text">1 records</span>
+                </div>
+                <div class="gallery-body">
+                    <div class="title-wrapper center">
+                        <h3>Путешествия</h3>
+                    </div>
+                    <div class="collection">
+                        
+                        <a href="/2015/02/24/Baikal.html" class="collection-item"><span class="badge blue white-text">2015-02-24</span>Байкал</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="b e gallery-collection">
+    <div class="d ii offset-m2 gu gallery-item gallery-expand ce" style="position: absolute; left: 0px; top: 124px;">
+        <div class="placeholder">
+            <div class="gallery-curve-wrapper">
+                <div class="gallery-header">
+                    <span><font><font >Git</font></font></span>
+                    <span class="badge blue white-text">1 records</span>
+                </div>
+                <div class="gallery-body">
+                    <div class="title-wrapper center">
+                        <h3>Git</h3>
+                    </div>
+                    <div class="collection">
+                        
+                        <a href="/coding/2015/03/13/bash-current-git-branch-name-in-command-prompt.html" class="collection-item"><span class="badge blue white-text">2015-03-13</span>Bash: how to get current git branch name in command prompt</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="b e gallery-collection">
+    <div class="d ii offset-m2 gu gallery-item gallery-expand ce" style="position: absolute; left: 0px; top: 124px;">
+        <div class="placeholder">
+            <div class="gallery-curve-wrapper">
+                <div class="gallery-header">
+                    <span><font><font >maven</font></font></span>
+                    <span class="badge blue white-text">1 records</span>
+                </div>
+                <div class="gallery-body">
+                    <div class="title-wrapper center">
+                        <h3>maven</h3>
+                    </div>
+                    <div class="collection">
+                        
+                        <a href="/coding/2015/03/19/bash-how-to-unused-maven-artifacts.html" class="collection-item"><span class="badge blue white-text">2015-03-19</span>Bash: how to remove unused Maven artifacts</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="b e gallery-collection">
+    <div class="d ii offset-m2 gu gallery-item gallery-expand ce" style="position: absolute; left: 0px; top: 124px;">
+        <div class="placeholder">
+            <div class="gallery-curve-wrapper">
+                <div class="gallery-header">
+                    <span><font><font >Europe</font></font></span>
+                    <span class="badge blue white-text">1 records</span>
+                </div>
+                <div class="gallery-body">
+                    <div class="title-wrapper center">
+                        <h3>Europe</h3>
+                    </div>
+                    <div class="collection">
+                        
+                        <a href="/%D0%BF%D1%83%D1%82%D0%B5%D1%88%D0%B5%D1%81%D1%82%D0%B2%D0%B8%D1%8F/2016/07/11/Europe-2016.html" class="collection-item"><span class="badge blue white-text">2016-07-11</span>По Европе на мото</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="b e gallery-collection">
+    <div class="d ii offset-m2 gu gallery-item gallery-expand ce" style="position: absolute; left: 0px; top: 124px;">
+        <div class="placeholder">
+            <div class="gallery-curve-wrapper">
+                <div class="gallery-header">
+                    <span><font><font >Travel</font></font></span>
+                    <span class="badge blue white-text">1 records</span>
+                </div>
+                <div class="gallery-body">
+                    <div class="title-wrapper center">
+                        <h3>Travel</h3>
+                    </div>
+                    <div class="collection">
+                        
+                        <a href="/%D0%BF%D1%83%D1%82%D0%B5%D1%88%D0%B5%D1%81%D1%82%D0%B2%D0%B8%D1%8F/2016/07/11/Europe-2016.html" class="collection-item"><span class="badge blue white-text">2016-07-11</span>По Европе на мото</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+        </div>
+    </div>
+    <div class="fixed-action-btn to-top">
+        <a href="#top" id="toTop" class="btn-floating btn-large waves-effect waves-light" style="display: none;"><i
+                class="material-icons">expand_less</i></a>
+    </div>
+    <div class="fixed-action-btn body-to-top">
+        <a href="#top" id="bodyToTop" class="btn-floating btn-large waves-effect waves-light" style="display: none;"><i
+                class="material-icons">expand_less</i></a>
+    </div>
+</main>
+
+    
+
+    <footer class="page-footer blue">
+        <div class="row">
+            <div class="col s12 m4 l4">
+                <p class="center p-linkIcon">
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                </p>
+            </div>
+            <div class="col s12 m4 l4">
+                <p class="p-date grey-text text-lighten-4 center">This blog is built with <a href="http://jekyllrb.com/" style="color: rgb(0,255,0)">Jekyll</a> and hosted on <a href="https://pages.github.com/" style="color: rgb(0,255,0)">GitHub Pages</a></p>
+            </div>
+        </div>
+</footer>
+<style>
+</style>
+
+    <script type="text/javascript" src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+
+<script type="text/javascript" src="/assets/js/materialize.min.js"></script>
+<script type="text/javascript" src="/assets/js/jquery.scrollToTop.min.js"></script>
+<script type="text/javascript" src="/assets/js/gallery.min.opt.js"></script>
+<script type="text/javascript" src="/assets/js/jquery.lazyload.min.js"></script>
+<script type="text/javascript" src="/assets/js/toc.js"></script>
+<script type="text/javascript" src="/assets/js/main.js"></script>
+<script type="text/javascript" src="/assets/js/bootstrap3-typeahead.min.js"></script>
+
+
+
+
+<script>
+   $(document).ready(function () {
+        var time1 = 0;
+        var show = false;
+        var names = new Array(); //文章名字等
+        var urls = new Array(); //文章地址
+        $.getJSON("/assets/cb-search.json").done(function (data) {
+            if (data.code == 0) {
+                for (var index in data.data) {
+                    var item = data.data[index];
+                    names.push(item.title);
+                    urls.push(item.url);
+                }
+
+                $(".cb-search-content").typeahead({
+                    source: names,
+
+                    afterSelect: function (item) {
+						$(".cb-search-tool").css("display", "none");
+                        show = false;
+                        window.location.href = (urls[names.indexOf(item)]);
+                        return item;
+                    }
+                });
+            }
+        }).error(function(data, b) { console.log("json解析错误，搜索功能暂不可用，请检查文章title，确保不含有换行等特殊符号"); });
+            
+                var posts = $("div.gallery-item");
+                if (posts.attr("data-url")){
+                posts.unbind();
+                posts.click(function(){
+                    var postUrl = $(this).attr("data-url")
+                    window.location.href=postUrl;
+                })
+                }
+
+            
+    });
+
+</script>
+
+    
+
+  </body>
+
+</html>
