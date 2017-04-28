@@ -2,7 +2,7 @@
 layout: post
 title: Байкал
 date: '2015-02-24T19:58:00.000+03:00'
-image: /assets/images/2015/IMG_3560.jpg
+image: /assets/images/2015/IMG_3560.JPG
 author: Daemonic
 tags:
 - Путешествия
