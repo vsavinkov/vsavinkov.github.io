@@ -5,7 +5,7 @@ date:   2007-03-02 10:42:06 +0800
 categories: NoImage
 image:
 tags: test
-comments: true
+#comments: true
 ---
 该文章用于展示markdown生成的格式。
 

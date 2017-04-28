@@ -6,7 +6,7 @@ categories: NoImage
 image:
 tags: test
 toc: a
-comments: true
+#comments: true
 ---
 这个页面用于展示toc的效果，请使用pc或者平板设备插看。（暂不支持home文章显示toc）
 
