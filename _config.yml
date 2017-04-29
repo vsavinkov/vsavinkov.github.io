@@ -17,7 +17,7 @@ theme-color: {
 mobile-hp: /assets/images/M.png
 mobile-bg: theme
 header-bg: /assets/images/bg.png
-disqus-shortname: savinkovme
+disqus-shortname: savinkov-me
 cdn: false
 cdnurl: 
 google_analytics:
