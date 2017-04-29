@@ -6,8 +6,8 @@
 </description>
     <link>http://localhost:4000/</link>
     <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sat, 29 Apr 2017 15:55:55 +0300</pubDate>
-    <lastBuildDate>Sat, 29 Apr 2017 15:55:55 +0300</lastBuildDate>
+    <pubDate>Sat, 29 Apr 2017 17:00:30 +0300</pubDate>
+    <lastBuildDate>Sat, 29 Apr 2017 17:00:30 +0300</lastBuildDate>
     <generator>Jekyll v3.4.3</generator>
     
       <item>
@@ -160,7 +160,7 @@
     
       <item>
         <title>Bash: how to control programmable surge protector from console</title>
-        <description>&lt;p&gt;If you have programmable LAN-controlled surge protector EG-PMS2-LAN then you, like me, may be disappointed by fact that it only can be controlled via (ugly) web interface.&lt;/p&gt;
+        <description>&lt;p&gt;If you have programmable LAN-controlled surge protector Energenie EG-PMS2-LAN, then you, like me, may be disappointed by fact that it only can be controlled via (ugly) web interface.&lt;/p&gt;
 
 &lt;p&gt;Here is a bash function which allow you to do that via console:&lt;/p&gt;
 

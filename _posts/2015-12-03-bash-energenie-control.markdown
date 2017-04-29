@@ -7,7 +7,7 @@ tags:
 - bash
 ---
 
-If you have programmable LAN-controlled surge protector EG-PMS2-LAN then you, like me, may be disappointed by fact that it only can be controlled via (ugly) web interface.
+If you have programmable LAN-controlled surge protector Energenie EG-PMS2-LAN, then you, like me, may be disappointed by fact that it only can be controlled via (ugly) web interface.
 
 Here is a bash function which allow you to do that via console:
 
