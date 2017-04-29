@@ -3,7 +3,7 @@
 	"data" : [
 	 
 	{
-		"title" : "По Европе на мото-Europe_Travel",
+		"title" : "По Европе на мото-Europe",
 		"url" : "/%D0%BF%D1%83%D1%82%D0%B5%D1%88%D0%B5%D1%81%D1%82%D0%B2%D0%B8%D1%8F/2016/07/11/Europe-2016.html"
 	}
 	
@@ -187,15 +187,7 @@
 	
     
 	{
-		"title" : "toc test-test",
-		"url" : "/2007/03/04/toc.html"
-	}
-	
-	,
-	
-    
-	{
-		"title" : "markdown test-test",
+		"title" : "markdown test-",
 		"url" : "/2007/03/02/test.html"
 	}
 	

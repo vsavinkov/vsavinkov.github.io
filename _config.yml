@@ -21,7 +21,7 @@ disqus-shortname: savinkov
 cdn: false
 cdnurl: 
 google_analytics:
-defaultAuthor: Slava
+defaultAuthor: 
 defaultAuthorImage: assets/images/tx.jpg
 manyAuthors: true
 gallery: false
