@@ -3,6 +3,7 @@ layout: post
 title: 'iTerm: how to open new tabs programmatically'
 date: '2015-06-11T10:08:00.001+03:00'
 categories: Coding
+comments: true
 tags:
 - iTerm
 - bash

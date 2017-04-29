@@ -4,7 +4,6 @@ title:  "markdown test"
 date:   2007-03-02 10:42:06 +0800
 image: /assets/images/demo5.jpg
 tags: 
-#comments: true
 ---
 该文章用于展示markdown生成的格式。
 

@@ -3,6 +3,7 @@ layout: post
 title: 'Bash: Checking Jenkins jobs statuses from command line'
 date: '2014-10-30T14:26:00.003+03:00'
 categories: Coding
+comments: true
 tags:
 - Jenkins
 - bash

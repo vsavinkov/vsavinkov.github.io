@@ -3,6 +3,7 @@ layout: post
 title: 'Bash: how to get current git branch name in command prompt'
 date: '2015-03-13T17:39:00.001+03:00'
 categories: Coding
+comments: true
 tags:
 - bash
 - Git

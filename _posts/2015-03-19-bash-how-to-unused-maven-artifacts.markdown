@@ -3,6 +3,7 @@ layout: post
 title: 'Bash: how to remove unused Maven artifacts'
 date: '2015-03-19T11:47:00.000+03:00'
 categories: Coding
+comments: true
 tags:
 - bash
 - maven

@@ -4,6 +4,7 @@ title: Турция. Глава IV. Эрзурум
 date: '2014-05-08T16:16:00.000+04:00'
 image: /assets/images/2014/IMG_1592_small.JPG
 categories: Путешествия
+comments: true
 tags:
 - Turkey 2014
 ---

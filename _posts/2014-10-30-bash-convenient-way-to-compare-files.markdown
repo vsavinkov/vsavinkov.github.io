@@ -3,6 +3,7 @@ layout: post
 title: 'Bash: Convenient way to compare files'
 date: '2014-10-30T14:43:00.001+03:00'
 categories: Coding
+comments: true
 tags:
 - bash
 ---

@@ -3,6 +3,7 @@ layout: post
 title: 'Bash: how to check process availability'
 date: '2015-06-19T11:30:00.005+03:00'
 categories: Coding
+comments: true
 tags:
 - bash
 ---

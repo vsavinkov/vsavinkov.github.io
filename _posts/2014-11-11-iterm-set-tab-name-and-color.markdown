@@ -3,6 +3,7 @@ layout: post
 title: 'iTerm: How to set tab name and color from command line'
 date: '2014-11-11T16:52:00.000+03:00'
 categories: Coding
+comments: true
 tags:
 - iTerm
 - bash

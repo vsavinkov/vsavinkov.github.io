@@ -4,6 +4,7 @@ title: Турция. Глава VIII. Транспорт
 date: '2014-05-14T16:17:00.000+04:00'
 image: /assets/images/2014/IMG_1842_small.JPG
 categories: Путешествия
+comments: true
 tags:
 - Turkey 2014
 ---

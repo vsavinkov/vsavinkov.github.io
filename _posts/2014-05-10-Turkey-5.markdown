@@ -4,6 +4,7 @@ title: Турция. Глава V. Догубаязит. Ван
 date: '2014-05-10T16:16:00.000+04:00'
 image: /assets/images/2014/IMG_1646_small.JPG
 categories: Путешествия
+comments: true
 tags:
 - Turkey 2014
 ---

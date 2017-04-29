@@ -3,6 +3,7 @@ layout: post
 title: Обзор внешней батареи для мобильных устройств
 date: '2011-08-13T16:47:00.000+04:00'
 image: /assets/images/2011/main.JPG
+comments: true
 tags:
 - Review
 ---

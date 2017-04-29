@@ -3,6 +3,7 @@ layout: post
 title: 'Bash: how to control programmable surge protector from console'
 date: '2015-12-03T22:26:00.001+03:00'
 categories: Coding
+comments: true
 tags:
 - bash
 ---

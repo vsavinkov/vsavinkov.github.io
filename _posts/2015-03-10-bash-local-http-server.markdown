@@ -3,6 +3,7 @@ layout: post
 title: 'Bash: how to create local HTTP server to share files'
 date: '2015-03-10T13:56:00.001+03:00'
 categories: Coding
+comments: true
 tags:
 - bash
 - MacOS

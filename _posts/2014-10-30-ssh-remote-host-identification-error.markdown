@@ -3,6 +3,7 @@ layout: post
 title: 'Bash: SSH - avoiding ''remote host identification has changed'' error'
 date: '2014-10-30T14:07:00.002+03:00'
 categories: Coding
+comments: true
 tags:
 - bash
 ---
