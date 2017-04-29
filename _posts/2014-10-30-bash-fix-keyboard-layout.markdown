@@ -3,6 +3,7 @@ layout: post
 title: 'Bash: Fix keyboard layout (Punto Switcher-like)'
 date: '2014-10-30T14:48:00.001+03:00'
 categories: Coding
+comments: true
 tags:
 - bash
 - MacOS
