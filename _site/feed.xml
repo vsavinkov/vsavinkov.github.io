@@ -6,9 +6,99 @@
 </description>
     <link>/</link>
     <atom:link href="/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sun, 30 Apr 2017 23:53:48 +0300</pubDate>
-    <lastBuildDate>Sun, 30 Apr 2017 23:53:48 +0300</lastBuildDate>
+    <pubDate>Mon, 01 May 2017 01:39:42 +0300</pubDate>
+    <lastBuildDate>Mon, 01 May 2017 01:39:42 +0300</lastBuildDate>
     <generator>Jekyll v3.4.3</generator>
+    
+      <item>
+        <title>How to create blog with Jekyll and host it on GitHub Pages</title>
+        <description>&lt;p&gt;This manual provides an easy way to create static blog / personal page / other type of private site using &lt;a href=&quot;https://jekyllrb.com/&quot;&gt;Jekyll&lt;/a&gt; and GitHub Pages.
+Blog which you’re reading right now is built exactly that way.&lt;/p&gt;
+
+&lt;h2 id=&quot;theme&quot;&gt;Theme&lt;/h2&gt;
+&lt;p&gt;Unlike other manuals, I recommend you to start with theme. Seriously, Google for ‘Jekyll themes’ and pick one that you like. Most of them have GitHub repos, so it should be easy to start.&lt;/p&gt;
+
+&lt;p&gt;Okay, let’s say you found a theme you like. Say it will be &lt;a href=&quot;https://github.com/codeasashu/hcz-jekyll-blog&quot;&gt;hcz-jekyll-blog theme&lt;/a&gt;.
+Theme demo can be found at &lt;a href=&quot;https://codeasashu.github.io/hcz-jekyll-blog/&quot;&gt;https://codeasashu.github.io/hcz-jekyll-blog/&lt;/a&gt;
+Go to console, checkout theme:&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;cd; mkdir theme; cd theme
+git clone https://github.com/codeasashu/hcz-jekyll-blog
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Just in case, my blog uses &lt;a href=&quot;https://github.com/KeJunMao/jekyll-theme-materialize&quot;&gt;jekyll-theme-materialize&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h2 id=&quot;jekyll-installation&quot;&gt;Jekyll installation&lt;/h2&gt;
+&lt;p&gt;It’s quite simple. Just execute:&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;gem install jekyll
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Nothing more to say. However, there is a &lt;a href=&quot;https://jekyllrb.com/docs/installation/&quot;&gt;detailed instruction&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h2 id=&quot;repository&quot;&gt;Repository&lt;/h2&gt;
+&lt;p&gt;Now you need an account on the &lt;a href=&quot;https://github.com&quot;&gt;GitHub&lt;/a&gt;. Create it if you don’t have one. Next step is a repo. GitHub Pages requires you to have repo named your_username.github.io. So, create one with that name. &lt;a href=&quot;https://pages.github.com/&quot;&gt;Here&lt;/a&gt; is an instruction how to do that.&lt;/p&gt;
+
+&lt;p&gt;Now we need to checkout it. I recommend using SSH way to checkout to avoid problems in future. It should look like:&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;cd; mkdir blog; cd blog
+git clone git@github.com:your_username/your_username.github.io.git
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;h2 id=&quot;content&quot;&gt;Content&lt;/h2&gt;
+&lt;p&gt;Now we need to move theme to our repo. Perform:&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;mv ~/theme/hcz-jekyll-blog ~/blog/your_username.github.io/
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Now you can start a local version of your blog! Do:&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;cd ~/blog/your_username.github.io/
+jekyll serve
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Site should be available by URL &lt;a href=&quot;http://127.0.0.1:4000/&quot;&gt;http://127.0.0.1:4000/&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Open new console tab since existing one is busy with webserver. Fill _config.yml file with your info. If you are not sure what to fill, just leave fields empty - I did that for fields like ‘cdnurl:’ and ‘google_analytics:’. Now cd to _posts directory and add some posts. If you already have a blog, there’s a bunch of blog ]migration instructions](https://jekyllrb.com/docs/migrations/). You can easily switch from Blogger, Wordpress, etc. If no, just create a new post by adding new .markdown file. There’s already several example posts, so it’s easy to understand .markdown file syntax.&lt;/p&gt;
+
+&lt;h2 id=&quot;committing-changes&quot;&gt;Committing changes&lt;/h2&gt;
+&lt;p&gt;If you have basic understanding of GIT then point is easy: commit and push  your changes. If not, there’s a simple command to push changes:&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;add -A; commit -m &quot;CHANGES_DESCRIPTION&quot;; git pull --rebase; git push
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Replace CHANGES_DESCRIPTION with meaningful description of your changes - like ‘Added new post’.&lt;/p&gt;
+
+&lt;p&gt;If you observe an issue during push then you may need to add SSH keys to your GitHub account See &lt;a href=&quot;https://help.github.com/articles/adding-a-new-ssh-key-to-your-github-account/&quot;&gt;how to do that&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;That’s it! Wait for a minute after commit to let GitHub do some magic. Then open &lt;a href=&quot;http://your_username.github.io&quot;&gt;your_username.github.io&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h2 id=&quot;domain&quot;&gt;Domain&lt;/h2&gt;
+&lt;p&gt;Optional step is a domain. If you don’t like your_username.github.io as your site URL then you may create your own domain name for it. Steps are:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Go to domain registrar which you like, say it will be &lt;a href=&quot;https://name.com&quot;&gt;name.com&lt;/a&gt;;&lt;/li&gt;
+  &lt;li&gt;Search for a name, ensure it’s free and not too expensive for you;&lt;/li&gt;
+  &lt;li&gt;Register your domain (just domain, we don’t need hosting);&lt;/li&gt;
+  &lt;li&gt;Next step is not obvious - go to ‘Websites’ -&amp;gt; ‘Apps’ section of name.com and scroll for ‘GitHub’ there. Press ‘Get started’, select your domain and follow instructions;&lt;/li&gt;
+  &lt;li&gt;Almost done! The last step is to connect GitHub to your domain name. Go to Settings of your .github.io repo, scroll to ‘Custom domain’ section and enter your hostname;&lt;/li&gt;
+  &lt;li&gt;You may need to wait for a while (1-2 hours) or manually rebuild DNS cache to make it work;&lt;/li&gt;
+  &lt;li&gt;Enjoy your blog!&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+        <pubDate>Mon, 01 May 2017 01:00:00 +0300</pubDate>
+        <link>/2017/05/01/how-to-create-jekyll-blog.html</link>
+        <guid isPermaLink="true">/2017/05/01/how-to-create-jekyll-blog.html</guid>
+        
+        <category>Manual</category>
+        
+        
+      </item>
     
       <item>
         <title>По Европе на мото</title>
@@ -457,37 +547,6 @@ set_title_and_color name 255 255 0
         <category>iTerm</category>
         
         <category>bash</category>
-        
-        
-        <category>Coding</category>
-        
-      </item>
-    
-      <item>
-        <title>Bash: Fix keyboard layout (Punto Switcher-like)</title>
-        <description>&lt;p&gt;The following script will transcript clipboard content from English keyboard layout to Russian and vice versa.&lt;/p&gt;
-
-&lt;p&gt;For example, ‘Ghbdtn!’ will be trabsformed into ‘Привет!’. Note that transformation is MacBook Pro 2012 (and MacOS) specific. It should be amended for other devices/keyboards.&lt;/p&gt;
-
-&lt;p&gt;See script:&lt;/p&gt;
-
-&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;fixlayout(){
-  en=&quot;qwertyuiop\[]asdfghjkl;'\zxcvbnm,.QWERTYUIOP{}ASDFGHJKL:\&quot;|ZXCVBNM&amp;lt;&amp;gt;\@№%%^&amp;amp;*&quot;
-  ru=&quot;йцукенгшщз\хъфывапролджэёячсмитьбюЙЦУКЕНГШЩЗХЪФЫВАПРОЛДЖ\ЭЁЯЧСМИТЬБЮ\&quot;#$:,.;&quot;
-  pbpaste | sed y=$en$ru=$ru$en= | pbcopy
-}
-&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-
-&lt;p&gt;So, we just taking difference in English and Russian keyboard layouts into variable and transforming it.&lt;/p&gt;
-</description>
-        <pubDate>Thu, 30 Oct 2014 14:48:00 +0300</pubDate>
-        <link>/coding/2014/10/30/bash-fix-keyboard-layout.html</link>
-        <guid isPermaLink="true">/coding/2014/10/30/bash-fix-keyboard-layout.html</guid>
-        
-        <category>bash</category>
-        
-        <category>MacOS</category>
         
         
         <category>Coding</category>
