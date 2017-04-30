@@ -4,10 +4,10 @@
     <title>VS's blog</title>
     <description>Viacheslav Savinkov's personal blog
 </description>
-    <link>http://localhost:4000/</link>
-    <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sun, 30 Apr 2017 23:47:54 +0300</pubDate>
-    <lastBuildDate>Sun, 30 Apr 2017 23:47:54 +0300</lastBuildDate>
+    <link>/</link>
+    <atom:link href="/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Sun, 30 Apr 2017 23:53:48 +0300</pubDate>
+    <lastBuildDate>Sun, 30 Apr 2017 23:53:48 +0300</lastBuildDate>
     <generator>Jekyll v3.4.3</generator>
     
       <item>
@@ -148,8 +148,8 @@
 &lt;p&gt;Путешествуйте, господа! Покупайте байк и уезжайте далеко. Да, в дождь мокро. Да, тонну вещей не взять. Но это ни с чем не сравнимый опыт, который запомнится ярче и сильнее, чем тур с авиаперелетом.&lt;/p&gt;
 </description>
         <pubDate>Mon, 11 Jul 2016 15:31:00 +0300</pubDate>
-        <link>http://localhost:4000/%D0%BF%D1%83%D1%82%D0%B5%D1%88%D0%B5%D1%81%D1%82%D0%B2%D0%B8%D1%8F/2016/07/11/Europe-2016.html</link>
-        <guid isPermaLink="true">http://localhost:4000/%D0%BF%D1%83%D1%82%D0%B5%D1%88%D0%B5%D1%81%D1%82%D0%B2%D0%B8%D1%8F/2016/07/11/Europe-2016.html</guid>
+        <link>/%D0%BF%D1%83%D1%82%D0%B5%D1%88%D0%B5%D1%81%D1%82%D0%B2%D0%B8%D1%8F/2016/07/11/Europe-2016.html</link>
+        <guid isPermaLink="true">/%D0%BF%D1%83%D1%82%D0%B5%D1%88%D0%B5%D1%81%D1%82%D0%B2%D0%B8%D1%8F/2016/07/11/Europe-2016.html</guid>
         
         <category>Europe</category>
         
@@ -186,8 +186,8 @@ powerlan 2 1 #turns on socket 2
 &lt;p&gt;…and so on.&lt;/p&gt;
 </description>
         <pubDate>Thu, 03 Dec 2015 22:26:00 +0300</pubDate>
-        <link>http://localhost:4000/coding/2015/12/03/bash-energenie-control.html</link>
-        <guid isPermaLink="true">http://localhost:4000/coding/2015/12/03/bash-energenie-control.html</guid>
+        <link>/coding/2015/12/03/bash-energenie-control.html</link>
+        <guid isPermaLink="true">/coding/2015/12/03/bash-energenie-control.html</guid>
         
         <category>bash</category>
         
@@ -232,8 +232,8 @@ fi
 &lt;p&gt;It will wait for 3 seconds and recheck process availability until it will be running.&lt;/p&gt;
 </description>
         <pubDate>Fri, 19 Jun 2015 11:30:00 +0300</pubDate>
-        <link>http://localhost:4000/coding/2015/06/19/bash-checking-process-availability.html</link>
-        <guid isPermaLink="true">http://localhost:4000/coding/2015/06/19/bash-checking-process-availability.html</guid>
+        <link>/coding/2015/06/19/bash-checking-process-availability.html</link>
+        <guid isPermaLink="true">/coding/2015/06/19/bash-checking-process-availability.html</guid>
         
         <category>bash</category>
         
@@ -266,8 +266,8 @@ tab ‘ls’
 &lt;/div&gt;
 </description>
         <pubDate>Thu, 11 Jun 2015 10:08:00 +0300</pubDate>
-        <link>http://localhost:4000/coding/2015/06/11/iterm-how-to-open-new-tabs.html</link>
-        <guid isPermaLink="true">http://localhost:4000/coding/2015/06/11/iterm-how-to-open-new-tabs.html</guid>
+        <link>/coding/2015/06/11/iterm-how-to-open-new-tabs.html</link>
+        <guid isPermaLink="true">/coding/2015/06/11/iterm-how-to-open-new-tabs.html</guid>
         
         <category>iTerm</category>
         
@@ -298,8 +298,8 @@ tab ‘ls’
 &lt;/div&gt;
 </description>
         <pubDate>Thu, 19 Mar 2015 11:47:00 +0300</pubDate>
-        <link>http://localhost:4000/coding/2015/03/19/bash-how-to-unused-maven-artifacts.html</link>
-        <guid isPermaLink="true">http://localhost:4000/coding/2015/03/19/bash-how-to-unused-maven-artifacts.html</guid>
+        <link>/coding/2015/03/19/bash-how-to-unused-maven-artifacts.html</link>
+        <guid isPermaLink="true">/coding/2015/03/19/bash-how-to-unused-maven-artifacts.html</guid>
         
         <category>bash</category>
         
@@ -326,8 +326,8 @@ PS1=’[\e[1;34m]\W[\e[0m]$(get_git_branch) ‘
 Now your command prompt will contain current git branch name. If you are not in git repository then regular command prompt will appear.&lt;/p&gt;
 </description>
         <pubDate>Fri, 13 Mar 2015 17:39:00 +0300</pubDate>
-        <link>http://localhost:4000/coding/2015/03/13/bash-current-git-branch-name-in-command-prompt.html</link>
-        <guid isPermaLink="true">http://localhost:4000/coding/2015/03/13/bash-current-git-branch-name-in-command-prompt.html</guid>
+        <link>/coding/2015/03/13/bash-current-git-branch-name-in-command-prompt.html</link>
+        <guid isPermaLink="true">/coding/2015/03/13/bash-current-git-branch-name-in-command-prompt.html</guid>
         
         <category>bash</category>
         
@@ -359,8 +359,8 @@ Usage: go to desired folder, run ‘server’ command, open URL from clipboard.&
 &lt;/div&gt;
 </description>
         <pubDate>Tue, 10 Mar 2015 13:56:00 +0300</pubDate>
-        <link>http://localhost:4000/coding/2015/03/10/bash-local-http-server.html</link>
-        <guid isPermaLink="true">http://localhost:4000/coding/2015/03/10/bash-local-http-server.html</guid>
+        <link>/coding/2015/03/10/bash-local-http-server.html</link>
+        <guid isPermaLink="true">/coding/2015/03/10/bash-local-http-server.html</guid>
         
         <category>bash</category>
         
@@ -414,8 +414,8 @@ Usage: go to desired folder, run ‘server’ command, open URL from clipboard.&
 Суммарно поездка обошлась примерно в 60000₽ на человека.&lt;/p&gt;
 </description>
         <pubDate>Tue, 24 Feb 2015 19:58:00 +0300</pubDate>
-        <link>http://localhost:4000/%D0%BF%D1%83%D1%82%D0%B5%D1%88%D0%B5%D1%81%D1%82%D0%B2%D0%B8%D1%8F/2015/02/24/Baikal.html</link>
-        <guid isPermaLink="true">http://localhost:4000/%D0%BF%D1%83%D1%82%D0%B5%D1%88%D0%B5%D1%81%D1%82%D0%B2%D0%B8%D1%8F/2015/02/24/Baikal.html</guid>
+        <link>/%D0%BF%D1%83%D1%82%D0%B5%D1%88%D0%B5%D1%81%D1%82%D0%B2%D0%B8%D1%8F/2015/02/24/Baikal.html</link>
+        <guid isPermaLink="true">/%D0%BF%D1%83%D1%82%D0%B5%D1%88%D0%B5%D1%81%D1%82%D0%B2%D0%B8%D1%8F/2015/02/24/Baikal.html</guid>
         
         <category>Путешествия</category>
         
@@ -451,8 +451,8 @@ set_title_and_color name 255 255 0
 &lt;/div&gt;
 </description>
         <pubDate>Tue, 11 Nov 2014 16:52:00 +0300</pubDate>
-        <link>http://localhost:4000/coding/2014/11/11/iterm-set-tab-name-and-color.html</link>
-        <guid isPermaLink="true">http://localhost:4000/coding/2014/11/11/iterm-set-tab-name-and-color.html</guid>
+        <link>/coding/2014/11/11/iterm-set-tab-name-and-color.html</link>
+        <guid isPermaLink="true">/coding/2014/11/11/iterm-set-tab-name-and-color.html</guid>
         
         <category>iTerm</category>
         
@@ -482,8 +482,8 @@ set_title_and_color name 255 255 0
 &lt;p&gt;So, we just taking difference in English and Russian keyboard layouts into variable and transforming it.&lt;/p&gt;
 </description>
         <pubDate>Thu, 30 Oct 2014 14:48:00 +0300</pubDate>
-        <link>http://localhost:4000/coding/2014/10/30/bash-fix-keyboard-layout.html</link>
-        <guid isPermaLink="true">http://localhost:4000/coding/2014/10/30/bash-fix-keyboard-layout.html</guid>
+        <link>/coding/2014/10/30/bash-fix-keyboard-layout.html</link>
+        <guid isPermaLink="true">/coding/2014/10/30/bash-fix-keyboard-layout.html</guid>
         
         <category>bash</category>
         
