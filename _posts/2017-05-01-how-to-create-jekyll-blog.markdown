@@ -2,13 +2,13 @@
 layout: post
 title:  How to create blog with Jekyll and host it on GitHub Pages
 date:   2017-05-01 01:00:00 +0300
-image: /assets/images/2017/jekyll.PNG
+image: /assets/images/2017/jekyll.png
 comments: true
 tags:
 - Manual
 ---
 
-This manual provides an easy way to create static blog / personal page / other type of private site using [Jekyll](https://jekyllrb.com/) and GitHub Pages.
+This manual provides an easy way to create static blog / personal page / other type of private site using [Jekyll](https://jekyllrb.com/) and [GitHub Pages](https://github.io).
 Blog which you're reading right now is built exactly that way.
 
 ## Theme

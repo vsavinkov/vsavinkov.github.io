@@ -6,13 +6,13 @@
 </description>
     <link>/</link>
     <atom:link href="/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Mon, 01 May 2017 01:39:42 +0300</pubDate>
-    <lastBuildDate>Mon, 01 May 2017 01:39:42 +0300</lastBuildDate>
+    <pubDate>Mon, 01 May 2017 01:42:26 +0300</pubDate>
+    <lastBuildDate>Mon, 01 May 2017 01:42:26 +0300</lastBuildDate>
     <generator>Jekyll v3.4.3</generator>
     
       <item>
         <title>How to create blog with Jekyll and host it on GitHub Pages</title>
-        <description>&lt;p&gt;This manual provides an easy way to create static blog / personal page / other type of private site using &lt;a href=&quot;https://jekyllrb.com/&quot;&gt;Jekyll&lt;/a&gt; and GitHub Pages.
+        <description>&lt;p&gt;This manual provides an easy way to create static blog / personal page / other type of private site using &lt;a href=&quot;https://jekyllrb.com/&quot;&gt;Jekyll&lt;/a&gt; and &lt;a href=&quot;https://github.io&quot;&gt;GitHub Pages&lt;/a&gt;.
 Blog which you’re reading right now is built exactly that way.&lt;/p&gt;
 
 &lt;h2 id=&quot;theme&quot;&gt;Theme&lt;/h2&gt;
