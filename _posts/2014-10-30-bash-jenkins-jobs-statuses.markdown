@@ -13,7 +13,7 @@ If you use Jenkins as Continue Integration tool then you may find useful to see 
 
 	check_statuses(){
 	  check_status(){
-		wget http://our-jenkins/jenkins/job/$1/lastBuild/buildStatus &>temp
+		wget http://your-jenkins/jenkins/job/$1/lastBuild/buildStatus &>temp
 		if   [[ -n `cat temp | grep fol | grep blue`   ]]; then echo $2': blue'
 		elif [[ -n `cat temp | grep fol | grep red`    ]]; then echo $2': red'
 		elif [[ -n `cat temp | grep fol | grep yellow` ]]; then echo $2': yellow'

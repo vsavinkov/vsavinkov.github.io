@@ -11,7 +11,7 @@ tags:
 If you have script which deploys some product / runs some service, you may need to check whether it’s actually started. For example:
 
     #check if some process is running
-    if [ ps aux | grep $PROCESS_NAME -c == ‘0’ ]; then
+    if [ ps aux | grep $PROCESS_NAME -c == '0' ]; then
         echo Process not started
     else
         echo Process started!
@@ -23,12 +23,12 @@ If you have script which deploys some product / runs some service, you may need 
          sleep 1
     fi
 
-But what if your script need to wait until application started? I suggest to use recurrent function call to do that:
+But what if your script need to wait until application started? I suggest to use recurrent function to do that:
 
 	check_whether_service_started(){
 	  sleep 3
-	  if [ ps aux | grep $PROCESS_NAME&nbsp;-c == ‘0’ ]; then
-		echo Waiting for process to start…
+	  if [ ps aux | grep $PROCESS_NAME -c == '0' ]; then
+		echo Waiting for process to start...
 		check_whether_service_started
 	  else
 		echo Process is running.
