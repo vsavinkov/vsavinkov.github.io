@@ -24,5 +24,5 @@ Can be modified to use regular Mac Terminal instead of iTerm - just change app n
 
 Examples:
 
-	tab ‘cd ~/Projects; git pull --rebase’
-	tab ‘ls’
+	tab 'cd ~/Projects; git pull --rebase'
+	tab 'ls'
