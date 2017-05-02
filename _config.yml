@@ -1,5 +1,5 @@
 title: VS's blog
-email: alligators@list.ru
+email: viacheslav@savinkov.me
 description: > # this means to ignore newlines until "baseurl:"
   Viacheslav Savinkov's personal blog
 baseurl: "" # the subpath of your site, e.g. /blog
