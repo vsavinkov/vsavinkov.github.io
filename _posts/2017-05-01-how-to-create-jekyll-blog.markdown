@@ -52,6 +52,8 @@ Site should be available by URL [http://127.0.0.1:4000/](http://127.0.0.1:4000/)
 
 Open new console tab since existing one is busy with webserver. Fill _config.yml file with your info. If you are not sure what to fill, just leave fields empty - I did that for fields like 'cdnurl:' and 'google_analytics:'. Now cd to _posts directory and add some posts. If you already have a blog, there's a bunch of blog ]migration instructions](https://jekyllrb.com/docs/migrations/). You can easily switch from Blogger, Wordpress, etc. If no, just create a new post by adding new .markdown file. There's already several example posts, so it's easy to understand .markdown file syntax.
 
+Also I strongly recommend to add '_site/' string to .gitignore file to avoid duplications on every change and save space on GitHub.
+
 ## Committing changes
 If you have basic understanding of GIT then point is easy: commit and push  your changes. If not, there's a simple command to push changes:
 
