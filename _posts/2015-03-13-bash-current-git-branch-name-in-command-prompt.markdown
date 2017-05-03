@@ -19,3 +19,6 @@ Add the following to your .bash_profile (or .bashrc on Ubuntu):
 
 You can replace 4th string by your own prompt, just add $(get_git_branch) there.
 Now your command prompt will contain current git branch name. If you are not in git repository then regular command prompt will appear.
+
+See:
+![](/assets/images/2015/git_branch_cli.png)
