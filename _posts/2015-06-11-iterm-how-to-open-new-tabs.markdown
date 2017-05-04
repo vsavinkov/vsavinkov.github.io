@@ -26,3 +26,5 @@ Examples:
 
 	tab 'cd ~/Projects; git pull --rebase'
 	tab 'ls'
+
+![](/assets/images/2015/iterm_new_tab.gif)
