@@ -2,7 +2,7 @@
 layout: post
 title: И снова по Европе на мото
 date: '2018-07-04T17:19:00.002+03:00'
-image: /assets/images/2018/IMG_5574.jpg
+image: /assets/images/2018/IMG_6226.jpg
 categories: Travel
 comments: true
 tags:
