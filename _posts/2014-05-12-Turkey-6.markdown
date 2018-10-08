@@ -3,7 +3,7 @@ layout: post
 title: Турция. Глава VI. Гёреме
 date: '2014-05-12T16:17:00.000+04:00'
 image: /assets/images/2014/IMG_1726_small.JPG
-categories: Путешествия
+categories: Travel
 comments: true
 tags:
 - Turkey 2014

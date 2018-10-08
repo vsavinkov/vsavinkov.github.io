@@ -3,7 +3,7 @@ layout: post
 title: Турция. Глава VII. Анкара
 date: '2014-05-14T11:00:00.000+04:00'
 image: /assets/images/2014/IMG_1793_small.JPG
-categories: Путешествия
+categories: Travel
 comments: true
 tags:
 - Turkey 2014
