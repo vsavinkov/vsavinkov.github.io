@@ -1,17 +1,14 @@
 - name: twitter
-  url: 
+  url:
 
 - name: facebook
-  url: 
-
-- name: weibo
-  url: 
+  url:
 
 - name: instagram
-  url: 
+  url:
 
 - name: tumblr
-  url: 
+  url:
 
 - name: github
   url: https://github.com/vsavinkov
@@ -20,7 +17,7 @@
   url: https://www.linkedin.com/in/viacheslav-savinkov/
 
 - name: telegram
-  url: 
+  url:
 
 - name: gplus
   url:
